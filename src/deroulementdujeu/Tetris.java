@@ -8,6 +8,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 import javax.swing.JPanel;
 
+import Multijoueur.Client;
+import Multijoueur.Serveur;
 
 public class Tetris extends JFrame {
 
@@ -52,11 +54,23 @@ public class Tetris extends JFrame {
     	
         statusbar = new JLabel(" 0");
         add(statusbar, BorderLayout.NORTH);
+        
         Terrain Terrain = new Terrain(this);
         add(Terrain);
         Terrain.start();
-
-        setSize(200, 440);
+        Terrain.pause();
+        
+        /*
+        J'essaye de faire en sorte que si un joueur est connecté au socket, la partie se lance.
+        Dans le package Multijouer il y a le coté serveur qui accepte une connection
+        Je me disais que c'était ce qu'il fallait utiliser non ?
+        
+        if( ??? ){
+        	Terrain.start;
+        	}
+			
+		*/
+        this.setSize(200, 440);
         setTitle("Tetris");
         setDefaultCloseOperation(EXIT_ON_CLOSE);
    }

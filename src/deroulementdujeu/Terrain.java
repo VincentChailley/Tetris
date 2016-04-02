@@ -72,7 +72,7 @@ public class Terrain extends JPanel implements ActionListener {
         timer.start();
     }
 
-    private void pause()
+    void pause()
     {
         if (!isStarted)
             return;
