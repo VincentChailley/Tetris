@@ -22,6 +22,7 @@ public class Tetris extends JFrame {
     	JMenu menu1 = new JMenu("Fichier");
     	JMenu menu2 = new JMenu("Edition");
     	JMenu menu3 = new JMenu("Aide");
+    	JMenu menu4 = new JMenu("?");
 		/* differents choix de chaque menu */
     	JMenuItem jouer = new JMenuItem("Jouer");
     	JMenuItem pause = new JMenuItem("Pause (P)");
@@ -45,9 +46,9 @@ public class Tetris extends JFrame {
 		menu_bar1.add(menu1);
 		menu_bar1.add(menu2);
 		menu_bar1.add(menu3);
+		menu_bar1.add(menu4);
 				/* Ajouter la bar du menu à la frame */
 		setJMenuBar(menu_bar1);
-    	
     	
         statusbar = new JLabel(" 0");
         add(statusbar, BorderLayout.NORTH);
@@ -60,6 +61,8 @@ public class Tetris extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
    }
 
+    
+    
    public JLabel getStatusBar() {
        return statusbar;
    }
@@ -69,6 +72,6 @@ public class Tetris extends JFrame {
         Tetris game = new Tetris();
         game.setLocationRelativeTo(null);
         game.setVisible(true);
-
+        
     } 
 }
