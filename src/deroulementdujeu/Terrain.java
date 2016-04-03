@@ -7,9 +7,11 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.Timer;
+
 import deroulementdujeu.Piece.Figure;
 
 public class Terrain extends JPanel implements ActionListener {
@@ -266,12 +268,6 @@ public class Terrain extends JPanel implements ActionListener {
                  break;
              case KeyEvent.VK_SPACE:
                  dropDown();
-                 break;
-             case 'd':
-                 oneLineDown();
-                 break;
-             case 'D':
-                 oneLineDown();
                  break;
              }
 
