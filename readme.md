@@ -24,5 +24,7 @@ Les Design Pattern utilisés sont :
 - Listener : grace à la gestion des évenements clavier.
 - Singleton : pour nous permettre d'instancier un seule fois un objet et s'en servir autant qu'on le souhaitait.
 
+Quelques tests Junit ont été fait mais pas de test Mockito.
 
+Voir aussi : https://drive.google.com/folderview?id=0BznAw5MDphKjTmRVNVdLc1J2a1U&usp=sharing
 
